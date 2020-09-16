@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(to right, rgba(28, 98, 179, 0.9),rgba(117, 116, 15, 0.3));
+}
+.inp{
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+.h{
+    animation: fade 2s ease-in 0s infinite  ;
+}
+@keyframes fade {
+    0%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: pink;
+        color: red;
+       
+    }
+}
+
+@media screen and  (max-width:600px){
+    .inp{
+        width: 85%;
+        height: 50px;
+    }
+    .bt{
+        margin-top: 10px;
+    }
+    #cover{
+        width: 90%!important ;
+    }
+    .todoDiv{
+        max-width: 100vw;
+    }
+    main{
+        padding-top: 4rem;
+    }
+}
+.todoDiv{
+    display: flex;
+    margin: 1.5rem;
+    border: 1px solid grey;
+    background-image: linear-gradient(to right, rgba(28, 98, 179, 0.9),rgba(117, 116, 15, 0.3));
+}
+.todoList{
+    width: 300px;
+    font-size: 1.5rem;
+    color:white;
+  
+}
+.buttons{
+    padding: 1rem;
+    margin: 0.2rem;
+}
+.tc{
+    position: relative;
+}
+.t{
+    animation-name: fade;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+@keyframes fade{
+    100%{opacity: 0.001;}
+}
+main{
+    padding-top: 7rem;
+}
